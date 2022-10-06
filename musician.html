@@ -32,8 +32,10 @@ if(name==guess){
     correct=correct+1
     out.innerHTML = "correct: " + correct + " " + "wrong: " + wrong
 } else {
-    alert("Wrong Musician")
     wrong=wrong+1
+    alert("Wrong Musician")
+    if(wrong==3)
+    alert("sorry, game over")
     out.innerHTML = "correct: " + correct + " " + "wrong: " + wrong
 }
 }
