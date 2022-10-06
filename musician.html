@@ -18,12 +18,8 @@
 
     <input type="button" onclick="checkGuess()" value="Check the guess">
 </form>
-
-
 <p id="result">This text will be replaced </p>
-
 <script> 
-
 let wrong = 0;
 let correct = 0;
 function checkGuess(){
@@ -42,6 +38,28 @@ if(name==guess){
 }
 }
 </script>
+<div class="container">
 
+    <img  class="img-fluid" src="C:\Users\s554792\Desktop\locust.jpg" alt="" width="100px" height="100px" id="images" onclick="swapImage()">
+</div>
+<script>
+    let useImage = 1
+    function swapImage(){
+    switch(useImage){
+        case 1:
+            document.getElementById("images").src="C:\Users\s554792\Desktop\locust.jpg";
+            useImage+=1;
+            break;
+            case 2:
+            document.getElementById("images").src="C:\Users\s554792\Desktop\Antelope.jpg";
+            useImage+=1;
+            break;
+            case 3:
+            document.getElementById("images").src="C:\Users\s554792\Desktop\alpaca.jpg";
+            useImage=1;
+            break;
+        }
+    }
+</script>
 </body>
 </html> 
